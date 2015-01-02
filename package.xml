@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="template" version="0.0.2">
+	<name>EQdkp TSW Orochi</name>
+	<author>Inkraja</author>
+	<authorEmail></authorEmail>
+	<authorUrl>http://eqdkp-plus.eu</authorUrl>
+	<creationDate>2015-01-01</creationDate>
+	<copyright>Inkraja</copyright>
+	<license>CC</license>
+	<version>0.0.2</version>
+	<description></description>
+	<folder>eqdkp_tsw_orochi</folder>
+</install>
