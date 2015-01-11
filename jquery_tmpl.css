@@ -853,7 +853,7 @@ body .ui-tooltip {
 	color: #383838;
 }
 .ui-widget-content a {
-	color: #ffffff;
+	color: inherit;
 }
 .ui-widget-header {
 	border: 1px solid #9A9A9A;
