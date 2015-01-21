@@ -1033,6 +1033,14 @@ fieldset.settings dl {
 	margin-bottom: 10px;
 	font-size: 0.95em;
 	padding-bottom: 1px;
+	clear: both;
+}
+fieldset.settings dl:after {
+	content: ".";
+	clear: both;
+	display: block;
+	visibility: hidden;
+	height: 0px;
 }
 fieldset.settings dl:hover dt{
 	border-right: 1px solid #000;
@@ -3783,6 +3791,26 @@ border-bottom:1px solid #000;
 	color:#202020 !important;
 	border:0px solid #000 !important;
 	border-radius: 6px 0px 0px 0px;
+}
+/*PortalModule Timeline*/
+.timeline-wrap {
+background-color: rgba(18, 135, 204, 0.95)!important;
+box-shadow: 0px 0px 0.6em #25A2EC inset, 0px 0px 0.4em #1497E3 inset, 0px 0px 0.5em rgba(18, 135, 204, 0.5), 0px 0px 0.1em rgba(225, 242, 252, 0.5)!important;
+transition: opacity 0.2s ease 0s, width 0.8s ease-out 0s, background-color 1s ease 0s, border-color 0.3s ease 0s, box-shadow 1s ease 0s;
+}
+.timeline-dateblock,.timeline-event-title{
+	font-family:SquadaOne !important;
+	font-weight:normal!important;
+	font-size:12px;
+}
+.timeline-months {
+color: #002A5D !important;
+}
+.timeline-event-node  {
+background-color: #BEE0FD !important
+}
+.timeline-small-scale .timeline-dateblock:before {
+	background: #000 !important;
 }
 
 /*TSW:Remove the Shadow from Itemtooltips*/
