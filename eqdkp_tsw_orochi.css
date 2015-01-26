@@ -2580,7 +2580,7 @@ a.tool-item i {
 }
 
 /* Notifications */
-.notification-bubble-red {
+.bubble-red {
 	background-color: rgba (0,0,0,0.1);
 	border:1.5px solid #B94A48;
 	margin-right: 4px;
@@ -2597,7 +2597,7 @@ a.tool-item i {
 	vertical-align: baseline;
 	white-space: nowrap;
 }
-.notification-bubble-yellow {
+.bubble-yellow {
 	background-color: rgba (0,0,0,0.1);
 	border:1.5px solid #F89406;
 	margin-right: 4px;
@@ -2615,7 +2615,7 @@ a.tool-item i {
 	white-space: nowrap;
 }
 
-.notification-bubble-green{
+.bubble-green{
 	background-color: rgba (0,0,0,0.1);
 	border:1.5px solid #3CE03F;
 	margin-right: 4px;
@@ -3664,17 +3664,17 @@ li.prio_2 {
 	border-left: 4px solid #B94A48;
 }
 
-.notification-bubble-green.filtered {
+.bubble-green.filtered {
 	background-color: #ddd !important;
 	border: 1px solid #468847 !important;
 }
 
-.notification-bubble-yellow.filtered {
+.bubble-yellow.filtered {
 	background-color: #ddd !important;
 	border: 1px solid #F89406 !important;
 }
 
-.notification-bubble-red.filtered {
+.bubble-red.filtered {
 	background-color: #ddd !important;
 	border: 1px solid #B94A48 !important;
 }
@@ -3707,6 +3707,7 @@ color: inherit !important;
 -moz-box-shadow:  0px 0px 10px 2px ;
 box-shadow:  0px 0px 10px 2px ;
 border:1px solid;
+text-shadow: 0px 0px 1px #000;
 }
 .viewraid{
 color:inherit;
@@ -3719,13 +3720,20 @@ font-size:60%;
 [class*="viewraid status"]{
 font-size:60%;
 text-transform:uppercase; 
-margin-left:-0.6em;
+margin-left:0.1em;
+text-shadow: 0px 0px 1px #000;
+}
+[class*="viewraid status"]::before {
+content: "Raid";
+color: #383838;
+font-size: 1.5em;
+letter-spacing: -0pt;
 }
 .viewraid.status0{
 color:#00A400
 }
 .viewraid.status1{
-color:#E9EC00
+color:#E9EC00;
 }
 .viewraid.status2{
 color:#E80000
