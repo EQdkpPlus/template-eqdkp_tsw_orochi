@@ -1349,28 +1349,29 @@ ul.breamcrumb {
 
 ul.breamcrumb li {
 	float: left;
+	position: relative;
 }
 
 ul.breamcrumb a {
-	padding: 9px 1em 10px 2em;
-	float: left;
+	padding: 1em 1em 1em 2em;
+	display: block;
 	text-decoration: none;
 	color: #FFF;
 	position: relative;
 	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.65);
 	background-color: #2B99F7;
 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), #2B99F7);
-	margin-bottom: -1px;
+
 }
 
 ul.breamcrumb li:first-child a{
-	padding: 7px;
+	margin-bottom: -4px;
+	margin-top: -3px;
+	padding-left: 1em;
 }
 
 ul.breamcrumb li:first-child a i {
 	font-size: 1.5em;
-	margin-bottom: -1px;
-	margin-top: -1px;
 }
 
 ul.breamcrumb a::after,
@@ -3187,6 +3188,7 @@ button#cboxPrevious, button#cboxNext, button#cboxClose, button#cboxSlideshow {
 		float:none;
 		margin:0px;
 		padding:0px;
+		background:none;
 	}
 	
 	.responsive #titles h1 {
@@ -3261,7 +3263,6 @@ button#cboxPrevious, button#cboxNext, button#cboxClose, button#cboxSlideshow {
 	.responsive .breamcrumb li:first-child a {
 		border-right: 1px solid #ccc;
 		padding-right: 8px;
-		line-height: 27px;
 		padding-left: 8px !important;
 	}
 	
@@ -3309,7 +3310,7 @@ button#cboxPrevious, button#cboxNext, button#cboxClose, button#cboxSlideshow {
 	}
 	
 	.responsive div.table {
-		display: inline;
+		display: table;
 	}
 	
 	.responsive button.ui-multiselect {
@@ -3768,7 +3769,7 @@ font-family:"SquadaOne";
 	color:#202020!important;
 	border-radius: 5px 5px 0px 0px;
 }
-.chatPost{
+.chatPost,.chatNewPost{
 border-top:1px solid #D1D1D1!important;
 }
 .chatOnlineSeperator{
