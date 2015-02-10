@@ -535,14 +535,14 @@ h3 {
 ul.mainmenu li a.link_indexphp:before, ul.mainmenu li a.link_entry_home:before {
 	content:"\f015";
 	font-family: FontAwesome;
-	font-size: 40px;
+	font-size: 34px;
 
 	color:transparent;
 	background: url("TEMPLATE_IMAGE_PATH/navIcons.png")no-repeat scroll 0px 0px transparent;
 	width: 30px;
 	height:30px;
 	display:block;
-	margin:-0.3em -.3em -.8em -.3em
+	margin:-0.3em -.3em -.18em -.3em
 }
 ul.mainmenu li a.link_indexphp:hover:before, ul.mainmenu li a.link_entry_home:hover:before {
 	background-position: 0 -30px;
