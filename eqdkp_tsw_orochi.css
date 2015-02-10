@@ -1393,7 +1393,6 @@ ul.breamcrumb a::after{
 
 ul.breamcrumb a::before{
 	border-left-color: #2B99F7;
-	right: -1.1em;
 	z-index: 1;
 }
 
