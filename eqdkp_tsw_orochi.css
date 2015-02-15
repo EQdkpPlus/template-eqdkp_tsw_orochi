@@ -2790,12 +2790,13 @@ text-shadow: 0 0.5px 0.5px rgba(121,121,106,1);
 
 blockquote {
 	padding-left: 54px;
-	border: 1px solid #ccc;
+	border: 1px solid #2B99F7;
 	border-radius: 4px;
 	margin-bottom: 4px;
 	min-height: 28px;
 	position: relative;
 	color: #808080;
+	background:#FFF;
 }
 
 blockquote:before {
