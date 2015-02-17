@@ -1350,6 +1350,7 @@ ul.breamcrumb {
 ul.breamcrumb li {
 	float: left;
 	position: relative;
+	border-right: 0px solid #2B99F7;
 }
 
 ul.breamcrumb a {
@@ -1929,6 +1930,16 @@ font-size:inherit !important;
 	font-family: FontAwesome;
 	color: #B3B3B3;
 	font-size: 16px;
+}
+.article-container.featured h2:before {
+	content: "\f005";
+	font-family: FontAwesome;
+	color: gold;
+	font-size: 16px;
+}
+
+.article-container.featured:before {
+	content: none;
 }
 
 /* ACP: portal module management */
