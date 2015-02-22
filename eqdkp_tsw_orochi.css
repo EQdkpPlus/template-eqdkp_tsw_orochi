@@ -3132,8 +3132,14 @@ button#cboxPrevious, button#cboxNext, button#cboxClose, button#cboxSlideshow {
 	top: 0px;
 	right: 4px;
 }
+.nextraid_table span{
+font-weight: normal !important;
+}
 .nextevent_statusrow {
 	margin-right: 5px;
+	}
+[class*="icon-color-"]{
+	text-shadow: 1px 1px 1px #000;}
 }
 
 .reponsiveTestClass {text-align:right;}
@@ -3706,6 +3712,16 @@ li.prio_2 {
 .notification_list li:first-child{
 	border-top: 1px solid #ccc;
 }
+
+.toggleResponsive {
+	margin-bottom: 6px;
+}
+
+.rte-autocomplete.dropdown-menu {
+	margin-top: 12px;
+	text-align: left;
+	padding-left: 6px;
+}
 .elfinder .elfinder-navbar {
 	background-color: #131313 !important;
 }
@@ -3807,28 +3823,21 @@ border-bottom:1px solid #000;
 	border:0px solid #000 !important;
 	border-radius: 6px 0px 0px 0px;
 }
-/*PortalModule Timeline*/
-.timeline-wrap {
-background-color: rgba(18, 135, 204, 0.95)!important;
-box-shadow: 0px 0px 0.6em #25A2EC inset, 0px 0px 0.4em #1497E3 inset, 0px 0px 0.5em rgba(18, 135, 204, 0.5), 0px 0px 0.1em rgba(225, 242, 252, 0.5)!important;
-transition: opacity 0.2s ease 0s, width 0.8s ease-out 0s, background-color 1s ease 0s, border-color 0.3s ease 0s, box-shadow 1s ease 0s;
-}
-.timeline-dateblock,.timeline-event-title{
-	font-family:SquadaOne !important;
-	font-weight:normal!important;
-	font-size:12px;
-}
-.timeline-months {
-color: #002A5D !important;
-}
-.timeline-event-node  {
-background-color: #BEE0FD !important;
-}
-.timeline-small-scale .timeline-dateblock:before {
-	background: #000 !important;
-}
 
 /*TSW:Remove the Shadow from Itemtooltips*/
 [class*="tsw_q"]{
 text-shadow:none;
 }
+/*PortalModule Tagcloud*/
+div.jqcloud {text-shadow:1px 1px 1px #000;}
+
+div.jqcloud span.w10 { color: #0cf; }
+div.jqcloud span.w9 { color: #0cf; }
+div.jqcloud span.w8 { color: #0cf; }
+div.jqcloud span.w7 { color: #39d; }
+div.jqcloud span.w6 { color: #90c5f0; }
+div.jqcloud span.w5 { color: #90a0dd; }
+div.jqcloud span.w4 { color: #90c5f0; }
+div.jqcloud span.w3 { color: #a0ddff; }
+div.jqcloud span.w2 { color: #99ccee; }
+div.jqcloud span.w1 { color: #aab5f0; }
