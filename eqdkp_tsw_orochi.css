@@ -3795,11 +3795,16 @@ li.prio_2 {
 .elfinder .elfinder-navbar {
 	background-color: #131313 !important;
 }
-.jqplot-target{
-color: inherit !important;
-}
+/***************************************************
+/* JQPlot Adjustments
+/**************************************************/
+.jqplot-target{color: inherit !important;}
 
-/*Changes for custom tmpl raidacalview*/
+.jqplot-highlighter-tooltip, .jqplot-canvasOverlay-tooltip{color: rgb(0, 0, 0);}
+
+/***************************************************
+/*Changes for custom tmpl raidacalview
+ **************************************************/
 [class*="tr class_"]{
 -webkit-box-shadow:  0px 0px 10px 2px ;
 -moz-box-shadow:  0px 0px 10px 2px ;
@@ -3839,7 +3844,9 @@ color:#E80000
 .viewraid.status3{
 color:#800080
 }
-/*Chat Plugin*/
+/***************************************************
+/*Chat Plugin
+ **************************************************/
 #chatMenu{
 font-family:"SquadaOne";
 }
@@ -3914,3 +3921,11 @@ div.jqcloud span.w4 { color: #90c5f0; }
 div.jqcloud span.w3 { color: #a0ddff; }
 div.jqcloud span.w2 { color: #99ccee; }
 div.jqcloud span.w1 { color: #aab5f0; }
+
+/***************************************************
+ *PortalModule WhoisOnline
+ **************************************************/
+.whoisonline_portal .table { box-shadow: none; }
+.whoisonline_portal .portalbox_content .td, .whoisonline_portal .portalbox_content { padding: 3px 4px; }
+
+/***************************************************
