@@ -433,7 +433,32 @@ h3 {
 	padding-right: 5px;
 	padding-left: 5px;
 }
+/* Sidebar */
+.contentSidebar {
+	display: flex;
+	overflow: hidden !important;
+}
 
+.contentSidebarRight {
+	border-left: 1px solid @eqdkpSidebarBorderColor;
+	background-color: @eqdkpSidebarBackgroundColor;
+	color: @eqdkpSidebarFontColor;
+	padding: 10px;
+}
+
+.contentSidebarLeft {
+	border-right: 1px solid @eqdkpSidebarBorderColor;
+	background-color: @eqdkpSidebarBackgroundColor;
+	color: @eqdkpSidebarFontColor;
+	padding: 10px;
+}
+
+/* Contrast */
+.contentContrast {
+	color: @eqdkpContentContrastColor;
+	background-color: @eqdkpContentContrastBackgroundColor;
+	border-color: @eqdkpContentContrastBorderColor;
+}
 #contentFooter a, #contentFooter a:visited, #contentFooter a:hover{
 	color: #000;
 	text-decoration: none;
@@ -1246,6 +1271,10 @@ background: rgba(255,255,255, 0.65) !important;
 	color: #FFF;
 	border:1px solid #3F0;
 }
+.infobox-opacgrey {
+	background: rgba(0, 0, 0, 0.2);
+	color: #000000;
+}
 
 /* general: pagination */
 div.pagination li {
@@ -1955,10 +1984,15 @@ font-size:inherit !important;
 	color: #B3B3B3;
 	font-size: 16px;
 }
-.article-container.featured, .article_detail_container.featured{
+.article-container.featured{
 	display: block;
 }
-.article-container.featured h2:before {
+
+.article_detail_container.featured:before {
+	display: none;
+}
+
+.article-container.featured h2:before, .article_detail_container.featured h1.contentTitle:before {
 	content: "\f005";
 	font-family: FontAwesome;
 	color: gold;
@@ -2093,7 +2127,71 @@ fieldset.settings.floatRight.raid input[type="text"]{
 	font-weight: normal;
 	line-height: 35px;
 }
-
+#bottommenu_admin, #bottommenu_chars{
+	position: fixed;
+	bottom: 0px;
+	background: rgba(0, 0, 0, 0.85);
+	float: left;
+	width: 70%;
+	z-index: 99;
+	height: 42px;
+	padding: 0px 0 0px 10px;
+	display:none;
+	color:#FFFFFF;
+	vertical-align:middle;
+	margin:0;
+}
+#bottommenu_chars{
+	height: 70px;
+	clear: both;
+}
+.bottommenu_roundedcorner{
+	border-radius: 10px 10px 0px 0px;
+}
+.bottommenu_chars_table {
+	height: 70px;
+	width:100%;
+	box-shadow: none;
+}
+.bottommenu_admin_table {
+	height: 42px;
+	width:100%;
+	box-shadow: none;
+}
+.bottommenu_chars_icons {
+	width:65px;
+}
+.bottommenu_admin_icons {
+	width:48px;
+}
+.bottommenu_chars_note {
+	width:60%;
+}
+.hl_attendee_checked{
+	box-shadow: 0px 0px 3px #2B99F7;
+	border-color: #2B99F7;
+}
+.raidcal_buttonrow{
+	vertical-align:middle;
+	width: 100%;
+	margin: 0px 0px 10px 0px;
+	box-shadow: none;
+}
+.raidcal_buttonrow_left{
+	width: 60%;
+	vertical-align:middle;
+}
+.raidcal_buttonrow_middle{
+	width: 22%;
+	vertical-align:middle;
+}
+.raidcal_buttonrow_right{
+	width: 18%;
+	vertical-align:middle;
+}
+.buttonblock{
+	color:inherit;
+}
 #raidcal_signin_form h2 span.toggle_button:before, #toogleRaidcalModeration h2 span.toggle_button:before {
 	float: none !important;
 	font-size: 13px;
@@ -2186,7 +2284,6 @@ a.attendee_Link:hover{
 
 span.group_selector {
 	outline: none;
-	float: right;
 	display: block;
 }
 
@@ -2775,7 +2872,7 @@ ul#mychars-points-tooltip.dropdown-menu li table tbody tr td a {
 	min-width: 160px;
 }
 
-.fe-tooltip, .notification-tooltip, .user-tooltip, .mychars-points-tooltip, .langswitch-tooltip-container, .rss-tooltip {
+.fe-tooltip, .notification-tooltip, .user-tooltip, .mychars-points-tooltip, .langswitch-tooltip, .rss-tooltip {
 	display: none;
 }
 
@@ -3562,12 +3659,23 @@ font-weight: normal !important;
 	  margin: 10px 0;
 	  overflow: hidden;
 	}
+	
 	.responsive .ui-notify {
 		max-width: 95%;
 	}
 	
 	.responsive .langswitch-tooltip-trigger > span {
 		display: none;
+	}
+	.responsive .contentSidebar, .responsive .contentSidebarRight, .responsive .contentSidebarLeft {
+		display: block;
+		border: none;
+		background: none;
+	}
+	
+	.responsive .contentSidebarRight, .responsive .contentSidebarLeft {
+		width: auto !important;
+		border-top: 1px solid @eqdkpSidebarBorderColor;
 	}
 }
 
@@ -3835,6 +3943,16 @@ button.thirdpartylogin.openid {
 	border-radius: 3px;
 	border-color: transparent;
 }
+/* Leaderboard */
+.leaderboard {
+	display: flex;
+	flex-wrap: wrap;
+}
+	
+.leaderboard > div > div{
+		padding: 6px;
+}
+
 .elfinder .elfinder-navbar {
 	background-color: #131313 !important;
 }
