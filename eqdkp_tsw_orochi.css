@@ -2934,7 +2934,7 @@ text-shadow: 0 0.5px 0.5px rgba(121,121,106,1);
 }
 .user-tooltip-avatar img {
 	height: 40px;
-	max-widht: 60px;
+	max-width: 60px;
 	border: 1px solid #CCCCCC;
 	border-radius: 4px 4px 4px 4px;
 	background-color: #FFFFFF;
@@ -3456,7 +3456,7 @@ font-weight: normal !important;
 		float: none;
 		width: 100%;
 		height: 30px;
-		line-heigt: 22px;
+		line-height: 22px;
 		font-size: 15px;
 	}
 	
@@ -3746,7 +3746,7 @@ font-weight: normal !important;
 		float: none;
 		width: 100%;
 		height: 30px;
-		line-heigt: 22px;
+		line-height: 22px;
 		font-size: 15px;
 	}
 	
