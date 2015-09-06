@@ -1522,7 +1522,7 @@ ul.breamcrumb .current::before{
 }
 
 .article-container.list-type2 header, .article-container.list-type2 header h3, .article-container.list-type2 p {
-	display: inline !important;
+	display: block !important;
 }
 
 .article-container-wrapper{
@@ -2934,7 +2934,7 @@ text-shadow: 0 0.5px 0.5px rgba(121,121,106,1);
 }
 .user-tooltip-avatar img {
 	height: 40px;
-	max-widht: 60px;
+	max-width: 60px;
 	border: 1px solid #CCCCCC;
 	border-radius: 4px 4px 4px 4px;
 	background-color: #FFFFFF;
@@ -3456,7 +3456,7 @@ font-weight: normal !important;
 		float: none;
 		width: 100%;
 		height: 30px;
-		line-heigt: 22px;
+		line-height: 22px;
 		font-size: 15px;
 	}
 	
@@ -3658,7 +3658,7 @@ font-weight: normal !important;
 		margin-right: 0;
 	}
 	
-	.responsive .comment_avatar_container{ 
+	.responsive .comment_avatar_container, .responsive .comment_write_container::after, .responsive .comment_write_container::before, .comment_container::after, .comment_container::before{
 		display: none;
 	}
 	.responsive .comment_container, .responsive #comment_button, .responsive .reply-trigger, .responsive .reply_button, .responsive .comment_write_container {
@@ -3673,7 +3673,7 @@ font-weight: normal !important;
 		margin-left: 30px;
 	}
 	
-	.responsive .article_content img:not(.itt-icon):not(.classicon):not(.raceicon):not(.rankicon):not(.talenticon):not(.eventicon):not(.roleicon):not(.gameicon) {
+	.responsive .article_content img:not(.itt-icon):not(.classicon):not(.raceicon):not(.rankicon):not(.talenticon):not(.eventicon):not(.roleicon):not(.gameicon):not(.smilies):not(.eqdkpicon) {
 		width: 100% !important;
 	}
 	
@@ -3714,6 +3714,10 @@ font-weight: normal !important;
 	.responsive #personalAreaUser .user-avatar-smallest>img {
 		margin-top: 4px;
 	}
+	.responsive .first.column, .responsive .third.column {
+		min-width: 1% !important;
+		max-width: 100% !important;
+	}
 }
 
 @media all and (max-width: 590px) {
@@ -3746,7 +3750,7 @@ font-weight: normal !important;
 		float: none;
 		width: 100%;
 		height: 30px;
-		line-heigt: 22px;
+		line-height: 22px;
 		font-size: 15px;
 	}
 	
