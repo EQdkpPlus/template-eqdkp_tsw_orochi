@@ -3726,6 +3726,9 @@ font-weight: normal !important;
 	.responsive .first.column, .responsive .third.column {
 		min-width: 1% !important;
 		max-width: 100% !important;
+	}	
+	.responsive .bigDateTd {
+		display: none;
 	}
 }
 
