@@ -18,6 +18,7 @@
 		{JS_FILES}
 		<link rel="shortcut icon" href="{TEMPLATE_PATH}/images/favicon.png" type="image/png" />
 		<link rel="icon" href="{TEMPLATE_PATH}/images/favicon.png" type="image/png" />
+		<link rel="apple-touch-icon" href="{TEMPLATE_PATH}/images/apple-touch-icon.png" />
 		{RSS_FEEDS}
 		<!-- LISTENER head -->
 		<style type="text/css">
@@ -124,7 +125,7 @@
 							
 							<li>
 								<div class="notification-tooltip-container">
-									<a class="notification-tooltip-trigger"><i class="fa fa-bolt fa-lg"></i> <span class="hiddenSmartphone">{L_notifications}</span></a>
+									<a class="notification-tooltip-trigger"><i class="fa fa-bell fa-lg"></i> <span class="hiddenSmartphone">{L_notifications}</span></a>
 									<span class="notification-tooltip-trigger bubble-red notification-bubble-red hand" <!-- IF NOTIFICATION_COUNT_RED == 0 -->style="display:none;"<!-- ENDIF --> >{NOTIFICATION_COUNT_RED}</span>
 									<span class="notification-tooltip-trigger bubble-yellow notification-bubble-yellow hand" <!-- IF NOTIFICATION_COUNT_YELLOW == 0 -->style="display:none;"<!-- ENDIF -->>{NOTIFICATION_COUNT_YELLOW}</span>
 									<span class="notification-tooltip-trigger bubble-green notification-bubble-green hand" <!-- IF NOTIFICATION_COUNT_GREEN == 0 -->style="display:none;"<!-- ENDIF -->>{NOTIFICATION_COUNT_GREEN}</span>
@@ -422,9 +423,7 @@
 	
 	<div class="reponsiveTestClass" style="display:none;"><!-- This div is for testing the responsiveness --></div>
 	<script type="text/javascript">
-		//<![CDATA[
-			{JS_CODE}
-				
+		//<![CDATA[			
 			<!-- IF not S_LOGGED_IN -->
 			$(document).ready(function() {
 				/* Login Dialog */
@@ -482,6 +481,10 @@
 					}, title: {L_change_style|jsencode}, width: 600, height: 500}
 				);
 			}
+			
+			/* User clock */
+			var user_clock_format = "dddd, "+mmocms_user_dateformat_long+" "+ mmocms_user_timeformat;
+			var mymoment = moment(mmocms_user_timestamp_atom).utcOffset(mmocms_user_timezone);
 			
 			$(document).ready(function() {
 				$('.notification-mark-all-read').on('click', function() {
