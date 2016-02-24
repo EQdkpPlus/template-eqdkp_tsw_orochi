@@ -1348,13 +1348,15 @@ div.pagination {
 	border-style: solid;
 	border-width: 1px 1px 1px 1px;
 	text-decoration: none;
-	background-color: #fff;
+	background-color: rgba(255, 255, 255, 0.18);
 	line-height: 20px;
 	margin-left: 10px;
 	margin-bottom: 10px;
 	float: right;
-	border-radius: 4px;
 	min-width: 150px;
+	box-shadow: 0 0 0 1px rgba(0,0,0,.1) inset,0px 0 0 2px rgba(255,255,255,.1) inset;
+	-moz-box-shadow: 0 0 0 1px rgba(0,0,0,.1) inset,0px 0 0 2px rgba(255,255,255,.1) inset;
+	-webkit-box-shadow: 0 0 0 1px rgba(0,0,0,.4) inset,0px 0 0 2px rgba(255,255,255,.1) inset;
 }
 
 .articleSitemap li, .categoryChildSitemap li {
@@ -1364,13 +1366,6 @@ div.pagination {
 
 .articleSitemap li:last-child, .categoryChildSitemap li:last-child {
 	border: none;
-	border-bottom-right-radius: 4px;
-	border-bottom-left-radius: 4px;
-}
-
-.articleSitemap li:first-child, .categoryChildSitemap li:first-child {
-	border-top-right-radius: 4px;
-	border-top-left-radius: 4px;
 }
 
 .articleSitemap li.active {
@@ -1385,10 +1380,13 @@ div.pagination {
 .articleSitemap li:hover, .categoryChildSitemap li:hover {
 	background-color: #F7F7F9;
 	cursor: default;
+	box-shadow: 0 0 0 1px rgba(0,0,0,.1) inset,0px 0 0 2px rgba(255,255,255,.1) inset;
+	-moz-box-shadow: 0 0 0 1px rgba(0,0,0,.1) inset,0px 0 0 2px rgba(255,255,255,.1) inset;
+	-webkit-box-shadow: 0 0 0 1px rgba(0,0,0,.4) inset,0px 0 0 2px rgba(255,255,255,.1) inset;
 }
 
 .articleSitemap li:hover a, .categoryChildSitemap li:hover a {
-	color: #000;
+	color: #11a4ff;
 }
 
 .noheader .categoryChildSitemap {
